@@ -100,7 +100,7 @@ let dataPokemon = [];
 // partie recherche compliqué mais réussite 
 const searchInput = document.querySelector('.recherche-poke input');  // cible l'input 
 
-searchInput.addEventListener('keyup', function(){
+searchInput.addEventListener('input', function(){
 
 
 let divRecherche = document.querySelectorAll("#grid div")   // cible les div creer
