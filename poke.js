@@ -108,14 +108,14 @@ let titreRecherche = document.querySelectorAll("h2") // cible les titre creer
 let titleValue;
 // console.log(divRecherche)
 // console.log(titreRecherche)
-const input = searchInput.value
+const input = searchInput.value.toUpperCase()
 
 for (let i = 0; i < divRecherche.length; i++) {
   
   titleValue = titreRecherche[i].innerText;
   console.log(titleValue)
   
-  if(titleValue.indexOf(input) > -1) {
+  if(titleValue.toUpperCase().indexOf(input) > -1) {
       divRecherche[i].classList.remove("d-none");
   } else {
       divRecherche[i].classList.add("d-none");
